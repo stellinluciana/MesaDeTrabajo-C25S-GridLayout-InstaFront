@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #FCE4EC; /* Rosa pálido */;
 }
 
 i {
@@ -15,7 +16,8 @@ i {
 }
 
 .container-grid-area {
-    background-color: #FFFFFF;
+   /* Quitamos background-color: #FFFFFF; o lo cambiamos a transparent */
+    background-color: transparent; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -61,7 +63,7 @@ i {
     justify-items: center;
     border: 0.4px solid #22222280;
     margin: 20px;
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
 
 .img-historias {
@@ -78,7 +80,7 @@ i {
 
 .area-main {
     grid-area: main;
-    background-color: #FFFFFF;
+   background-color: transparent;;
 }
 
 .post {
@@ -139,7 +141,7 @@ i {
 
 .area-footer {
     grid-area: footer;
-    background: #222222;
+  background-color: transparent;;
     color: #FFFFFF;
     font-size: 10px;
     font-weight: 400;
@@ -155,6 +157,7 @@ i {
 /* DESKTOP */
 @media (min-width: 1024px) {
     .container-grid-area {
+       background-color: transparent; /* Permite que se vea el fondo rosa del body */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
@@ -165,7 +168,7 @@ i {
 
     .area-header {
         grid-area: header;
-        background-color: #FFFFFF;
+    background-color: transparent;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
